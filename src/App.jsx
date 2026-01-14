@@ -13,12 +13,16 @@ function App() {
   };
 
   // make scrolling smooth
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+  });
 
   return <></>;
 }

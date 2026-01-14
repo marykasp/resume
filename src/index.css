@@ -1,0 +1,162 @@
+/*------------------ Google Fonts ------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Jost:wght@300;400;500;700&display=swap");
+
+/*------------------  CSS Variables ------------------ */
+
+:root {
+  --primary-color: hsl(198, 100%, 55%);
+  --primary-color-transparent: hsla(198, 100%, 55%, 0.543);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 92%);
+  --bg-color: hsl(216, 18%, 16%);
+  --bg-color-alt: rgb(48, 53, 59);
+  --container-color: hsl(217, 18%, 14%);
+  --container-color-hover: #171b21;
+  --border-color: hsl(210, 2%, 65%);
+  --overlay-color: rgba(33, 39, 48, 0.97);
+
+  /* Typography */
+  --body-font: "Jost", sans-serif;
+  --second-font: "Caveat", cursive;
+
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margins ==========*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+  /* Shadow */
+  --shadow: 5px 5px rgb(255 255 255 / 10%);
+
+  /* Transition */
+  --transition: cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+/*------------------ LIGHT THEME ------------------ */
+.light-theme {
+  --primary-color: hsl(198, 82%, 33%);
+  --title-color: #171717;
+  --text-color: #262626;
+  --bg-color: #eeece8;
+  --bg-color-alt: #e1e1e1;
+  --container-color: #f9f8f8;
+  --container-color-hover: #e8e7e7;
+  --border-color: #171717;
+  --overlay-color: #dcdbd9;
+
+  /* Shadow */
+  --shadow: 5px 5px rgb(0 0 0 / 20%);
+}
+
+body.scale-cv {
+  --h1-font-size: 0.938rem;
+  --h2-font-size: 0.938rem;
+  --h3-font-size: 0.875rem;
+  --normal-font-size: 0.813rem;
+  --small-font-size: 0.75rem;
+  --smaller-font-size: 0.688rem;
+}
+
+/*========== Generate PDF button ==========*/
+.generate-pdf {
+  display: none;
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+/*========== Classes modified to reduce size and print on A4 sheet ==========*/
+.scale-cv .change-theme,
+.scale-cv .generate-pdf {
+  display: none;
+}
+
+.scale-cv .bd-container {
+  max-width: 650px;
+}
+
+.scale-cv .section {
+  padding: 1.5rem 0 0.8rem;
+}
+
+.scale-cv .section-title {
+  margin-bottom: 0.75rem;
+}
+
+.scale-cv .resume__left,
+.scale-cv .resume__right {
+  padding: 0 1rem;
+}
+
+.scale-cv .home__img {
+  width: 90px;
+  height: 90px;
+}
+
+.scale-cv .home__container {
+  gap: 1.5rem;
+}
+
+.scale-cv .home__data {
+  gap: 0.25rem;
+}
+
+.scale-cv .home__address,
+.scale-cv .social__container {
+  gap: 0.75rem;
+}
+
+.scale-cv .home__icon,
+.scale-cv .social__icon,
+.scale-cv .interests__icon {
+  font-size: 1rem;
+}
+
+.scale-cv .education__container,
+.scale-cv .experience__container,
+.scale-cv .certificate__container {
+  gap: 1rem;
+}
+
+.scale-cv .education__rounder,
+.scale-cv .experience__rounder {
+  width: 11px;
+  height: 11px;
+  margin-top: 0.22rem;
+}
+
+.scale-cv .education__line,
+.scale-cv .experience__line {
+  width: 1px;
+  height: 110%;
+  transform: translate(5px, 0);
+}
+
+.scale-cv .education__data,
+.scale-cv .experience__data {
+  gap: 0.25rem;
+}
+
+.scale-cv .skills__name {
+  margin-bottom: var(--mb-1);
+}
+
+.scale-cv .interests__container {
+  column-gap: 2.5rem;
+}

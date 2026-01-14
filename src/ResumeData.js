@@ -1,3 +1,5 @@
+import homeImage from "./assets/profile.png";
+
 // ========================== Header Data
 const headerIds = [
   "home",
@@ -179,6 +181,28 @@ const interestsData = {
   ],
 };
 
+// ======================== Certificates Data
+const certificatesData = {
+  title: "Certificates",
+  certificates: [
+    {
+      title: "React Tutorial App",
+      describe:
+        "Completed the full React Tutorial course, covering modern React concepts: JSX, Hooks, Context, React Router, APIs, Forms, Accessibility, and Immutability.",
+    },
+    {
+      title: "Skillcrush Front End Web Developer Track",
+      describe:
+        "Completed the Skillcrush Front end developer track inclluding React JS.",
+    },
+    {
+      title: "JavaScript Online",
+      describe:
+        "Completed the full learn Javascript course covering all modern JS as well as coding projects.",
+    },
+  ],
+};
+
 export {
   HeaderLinks,
   logoText,
@@ -188,9 +212,8 @@ export {
   profileData,
   educationData,
   skillsData,
-  certificatesData,
   experienceData,
-  languageData,
   interestsData,
   headerIds,
+  certificatesData,
 };
