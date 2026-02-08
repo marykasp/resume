@@ -13,6 +13,7 @@
   }
 
   .header-content {
+    display: grid;
     grid-template-columns: auto 320px;
     column-gap: 30px;
     padding: 24px;
@@ -36,6 +37,7 @@
 
   .header-intro {
     padding-right: 30px;
+    padding-bottom: 20px;
     border-right: 1px solid $payne-gray;
 
     @media (max-width: 992px) {
