@@ -64,7 +64,7 @@ const Header = () => {
               </li>
             </ul>
 
-            <ul className="contact-social-list flex-items-center">
+            <ul className="contact-social-list flex items-center">
               <li className="social-item">
                 <Link to="/">
                   <img src={Dribble} alt="dribble" />
